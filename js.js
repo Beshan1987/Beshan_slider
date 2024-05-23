@@ -1794,26 +1794,16 @@
             );
           }
           function createBadge() {
-            var $brand = $('<a class="w-webflow-badge"></a>').attr(
-              "href",
-              "https://webflow.com?utm_campaign=brandjs"
-            );
+            var $brand = $('<a class="w-webflow-badge"></a>').attr("href", "#");
             var $logoArt = $("<img>")
-              .attr(
-                "src",
-                "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg"
-              )
-              .attr("alt", "")
+              .attr("src", "#")
+              .attr("alt", "Beshan")
               .css({
                 marginRight: "4px",
-                width: "26px",
+                width: "0",
+                display: "none",
               });
-            var $logoText = $("<img>")
-              .attr(
-                "src",
-                "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg"
-              )
-              .attr("alt", "Made in Webflow");
+            var $logoText = $("<img>").attr("src", "#").attr("alt", "Beshan");
             $brand.append($logoArt, $logoText);
             return $brand[0];
           }

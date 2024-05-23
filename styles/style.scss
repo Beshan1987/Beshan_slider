@@ -96,6 +96,8 @@ sub {
 
 img {
   border: 0;
+  border-radius: 10px;
+  position: relative;
 }
 
 svg:not(:root) {
@@ -2400,4 +2402,8 @@ body {
   .spiral---img {
     border-radius: 0.5rem;
   }
+}
+
+.spiral---img p {
+  color: white !important;
 }
